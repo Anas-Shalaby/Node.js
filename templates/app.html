@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .container__person {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 150px;
+        margin: 2rem 0;
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.14);
+        cursor: pointer;
+        transition: 0.5s all;
+      }
+      .person__image {
+        width: 20%;
+      }
+      .person__image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: contain;
+        border: 3px solid #64b5f6;
+      }
+      .person__info {
+        margin-left: 2rem;
+      }
+      .container__person:hover {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+        transform: translateY(-10px);
+      }
+      .person__info p:first-child {
+        margin-bottom: 1rem;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .person__info p:last-child {
+        font-size: 13px;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="./profile?id=#ID#">
+        <div class="container__person">
+          <div class="person__image">
+            <img src="#image#" alt="person" />
+          </div>
+          <div class="person__info">
+            <p>#personName#</p>
+            <p>#personDescription#</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

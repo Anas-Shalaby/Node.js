@@ -1,0 +1,1 @@
+This text file is just for training on file system in node.js

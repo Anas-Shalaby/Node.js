@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 18px;
+        background: #3f51b5;
+        border-radius: 12px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .person__image {
+        width: 50%;
+        margin-top: 4rem;
+      }
+      .person__image img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+      .person__info {
+        width: 50%;
+      }
+      .person__info p {
+        margin: 3rem 0;
+      }
+      .person__info p:first-child {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .person__info p:last-child {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="person__image">
+        <img src="#image#" alt="person" />
+      </div>
+      <div class="person__info">
+        <p>#personName#</p>
+        <p>#personDescription#</p>
+      </div>
+      <a href="./">Back</a>
+    </div>
+  </body>
+</html>
